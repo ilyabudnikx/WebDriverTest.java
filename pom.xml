@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>UITesting</artifactId>
+    <artifactId>uitesting_epam</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -15,7 +15,6 @@
             <artifactId>selenium-java</artifactId>
             <version>4.0.0</version>
         </dependency>
-
     </dependencies>
 
     <properties>
