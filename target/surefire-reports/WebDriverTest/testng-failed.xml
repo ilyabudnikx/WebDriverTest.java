@@ -5,6 +5,7 @@
     <classes>
       <class name="WebDriverTest">
         <methods>
+          <include name="setup"/>
           <include name="main"/>
         </methods>
       </class> <!-- WebDriverTest -->
