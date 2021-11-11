@@ -24,8 +24,9 @@ public class WebDriverTest {
             WebElement searchAcceptButton = driver.findElement(By.xpath("/html/body/div[1]/main/div/div[2]/form/button"));
             searchAcceptButton.click();
             Thread.sleep(12000);
-            WebElement searchCloseButton = driver.findElement(By.cssSelector("body > div.modal > div.modal__content > button"));
+            WebElement searchCloseButton = driver.findElement(By.xpath("/html/body/div[3]/div[3]/button"));
             searchCloseButton.click();
+
             WebElement searchMenuButton = driver.findElement(By.cssSelector("#root > main > div > div > div > div > div > div > div.m-bots-page__header > div.m-page-header > div:nth-child(1) > button"));
             searchMenuButton.click();
             Thread.sleep(1000);
