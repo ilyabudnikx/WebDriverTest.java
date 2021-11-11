@@ -13,7 +13,7 @@ import java.util.List;
 public class WebDriverTest {
         @Test
     public  void main() throws InterruptedException {
-                System.setProperty("webdriver.chrome.driver","chromedriver");
+                System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/workspace/JavaUI_Test/chromedriver");
             org.openqa.selenium.WebDriver driver = new ChromeDriver();
             driver.manage().window().maximize();
             driver.get("https://bitsgap.com/sign-in/?d=app");
