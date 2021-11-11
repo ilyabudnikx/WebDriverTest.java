@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-WebDriverTest">
-              <span class="suite-name border-passed">WebDriverTest</span>
+              <span class="suite-name border-failed">WebDriverTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-WebDriverTest" class="hide-methods passed suite-WebDriverTest"> (hide)</a> <!-- hide-methods passed suite-WebDriverTest -->
-                      <a href="#" panel-name="suite-WebDriverTest" class="show-methods passed suite-WebDriverTest"> (show)</a> <!-- show-methods passed suite-WebDriverTest -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-WebDriverTest" class="hide-methods failed suite-WebDriverTest"> (hide)</a> <!-- hide-methods failed suite-WebDriverTest -->
+                      <a href="#" panel-name="suite-WebDriverTest" class="show-methods failed suite-WebDriverTest"> (show)</a> <!-- show-methods failed suite-WebDriverTest -->
                     </span>
-                    <div class="method-list-content passed suite-WebDriverTest">
+                    <div class="method-list-content failed suite-WebDriverTest">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-WebDriverTest" title="WebDriverTest" hash-for-method="main">main</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-WebDriverTest -->
+                    </div> <!-- method-list-content failed suite-WebDriverTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,9 +119,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-WebDriverTest" class="panel WebDriverTest">
-          <div class="suite-WebDriverTest-class-passed">
+          <div class="suite-WebDriverTest-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">WebDriverTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -130,10 +130,23 @@
                   <a name="main">
                   </a> <!-- main -->
                   <span class="method-name">main</span>
+                  <div class="stack-trace">java.lang.IllegalStateException: The driver executable must exist: D:\var\lib\jenkins\workspace\JavaUI_Test\chromedriver
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:144)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:139)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:434)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:127)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:46)
+	at WebDriverTest.main(WebDriverTest.java:18)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-WebDriverTest-class-passed -->
+          </div> <!-- suite-WebDriverTest-class-failed -->
         </div> <!-- panel WebDriverTest -->
         <div panel-name="test-xml-WebDriverTest" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -189,12 +202,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'main')
 data.setCell(0, 2, 'WebDriverTest')
-data.setCell(0, 3, 16735);
+data.setCell(0, 3, 34);
 window.suiteTableData['WebDriverTest']= { tableData: data, tableDiv: 'times-div-WebDriverTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 34 ms</span>
               <div id="times-div-WebDriverTest">
               </div> <!-- times-div-WebDriverTest -->
             </div> <!-- times-div -->
@@ -222,6 +235,8 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">WebDriverTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">main</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
