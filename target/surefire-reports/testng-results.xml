@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="WebDriverTest" duration-ms="17813" started-at="2021-11-11T15:58:33 MSK" finished-at="2021-11-11T15:58:51 MSK">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="17813" started-at="2021-11-11T15:58:33 MSK" finished-at="2021-11-11T15:58:51 MSK">
+      <class name="WebDriverTest">
+        <test-method status="PASS" signature="main()[pri:0, instance:WebDriverTest@6f1fba17]" name="main" duration-ms="17785" started-at="2021-11-11T15:58:33 MSK" finished-at="2021-11-11T15:58:51 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+      </class> <!-- WebDriverTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- WebDriverTest -->
+</testng-results>
