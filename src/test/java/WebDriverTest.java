@@ -19,11 +19,13 @@ public class WebDriverTest {
                 chrome.addArguments("user-agent=\\\"Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)\\\"");
             WebDriver driver = new ChromeDriver(chrome);
             driver.get("https://bitsgap.com/sign-in/?d=app");
+            System.out.print(driver.manage().window().getSize() + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             WebElement searchLogin = driver.findElement(By.id("lemail"));
             searchLogin.sendKeys("ilyabudnikuttest@mail.ru");
             WebElement searchPassword = driver.findElement(By.id("lpassword"));
             searchPassword.sendKeys("Bulka2002");
-            WebElement searchAcceptButton = driver.findElement(By.xpath("/html/body/div[1]/main/div/div[2]/form/button"));
+            Thread.sleep(1000);
+            WebElement searchAcceptButton = driver.findElement(By.cssSelector("#login-form > button"));
             searchAcceptButton.click();
             Thread.sleep(12000);
             WebElement searchCloseButton = driver.findElement(By.cssSelector("body > div.modal > div.modal__content.modal__content_mobile > button"));
