@@ -4,12 +4,18 @@ import org.openqa.selenium.WrapsDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FileExtension;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
 
 public class WebDriverTest {
+        @BeforeTest
+        public void setup() {
+                System.setProperty("org.openqa.selenium.WebDriver", "chromedriver");
+        }
+
         @Test
     public  void main() throws InterruptedException {
 
