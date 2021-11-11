@@ -4,6 +4,8 @@ import org.openqa.selenium.WrapsDriver;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.FileExtension;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.GeckoDriverInfo;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -15,10 +17,8 @@ public class WebDriverTest {
         @Test
     public  void main() throws InterruptedException {
 
-                System.setProperty("webdriver.chrome.driver","chromedriver.exe");
-                ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("window-size=945,1020");
-            WebDriver driver = new ChromeDriver(chromeOptions);
+                System.setProperty("webdriver.gecko.driver","geckodriver.exe");
+            WebDriver driver = new FirefoxDriver();
             driver.get("https://bitsgap.com/sign-in/?d=app");
 
             System.out.print(driver.manage().window().getSize() + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");

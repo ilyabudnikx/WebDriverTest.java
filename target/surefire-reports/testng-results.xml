@@ -2,32 +2,30 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="WebDriverTest" duration-ms="2031242" started-at="2021-11-11T19:16:40 MSK" finished-at="2021-11-11T19:50:31 MSK">
+  <suite name="WebDriverTest" duration-ms="38142" started-at="2021-11-11T20:35:50 MSK" finished-at="2021-11-11T20:36:29 MSK">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="2031242" started-at="2021-11-11T19:16:40 MSK" finished-at="2021-11-11T19:50:31 MSK">
+    <test name="Command line test" duration-ms="38142" started-at="2021-11-11T20:35:50 MSK" finished-at="2021-11-11T20:36:29 MSK">
       <class name="WebDriverTest">
-        <test-method status="FAIL" signature="main()[pri:0, instance:WebDriverTest@6f1fba17]" name="main" duration-ms="2031206" started-at="2021-11-11T19:16:40 MSK" finished-at="2021-11-11T19:50:31 MSK">
+        <test-method status="FAIL" signature="main()[pri:0, instance:WebDriverTest@6f1fba17]" name="main" duration-ms="38104" started-at="2021-11-11T20:35:51 MSK" finished-at="2021-11-11T20:36:29 MSK">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=95.0.4638.69)
+              <![CDATA[Failed to decode response from marionette
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'DESKTOP-11KEV12', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [25ea1eef1222152afd8f98577dffc2e0, findElement {using=css selector, value=body > div.modal > div.modal__content > button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\Ilya\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64861}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64861/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 25ea1eef1222152afd8f98577dffc2e0]]>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [470ee69c-6002-47d4-bf1b-8ac3f67ce56e, findElement {using=css selector, value=body > div.modal > div.modal__content.modal__content_mobile > button}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 94.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211103134640, moz:debuggerAddress: localhost:52623, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 21964, moz:profile: C:\Users\Ilya\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:52623/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 470ee69c-6002-47d4-bf1b-8ac3f67ce56e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=95.0.4638.69)
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'DESKTOP-11KEV12', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [25ea1eef1222152afd8f98577dffc2e0, findElement {using=css selector, value=body > div.modal > div.modal__content > button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\Ilya\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64861}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64861/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 25ea1eef1222152afd8f98577dffc2e0
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [470ee69c-6002-47d4-bf1b-8ac3f67ce56e, findElement {using=css selector, value=body > div.modal > div.modal__content.modal__content_mobile > button}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 94.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211103134640, moz:debuggerAddress: localhost:52623, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 21964, moz:profile: C:\Users\Ilya\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:52623/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 470ee69c-6002-47d4-bf1b-8ac3f67ce56e
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -43,7 +41,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-at WebDriverTest.main(WebDriverTest.java:28)
+at WebDriverTest.main(WebDriverTest.java:33)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
