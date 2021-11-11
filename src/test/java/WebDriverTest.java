@@ -1,7 +1,8 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WrapsDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.FileExtension;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
@@ -14,7 +15,7 @@ public class WebDriverTest {
         @Test
     public  void main() throws InterruptedException {
                 System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/workspace/JavaUI_Test/chromedriver");
-            org.openqa.selenium.WebDriver driver = new ChromeDriver();
+            WebDriver driver = new ChromeDriver();
             driver.manage().window().maximize();
             driver.get("https://bitsgap.com/sign-in/?d=app");
             WebElement searchLogin = driver.findElement(By.id("lemail"));
