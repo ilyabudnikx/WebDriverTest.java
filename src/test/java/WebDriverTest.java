@@ -11,14 +11,9 @@ import java.lang.ref.WeakReference;
 import java.util.List;
 
 public class WebDriverTest {
-        @BeforeTest
-        public void setup() {
-                System.setProperty("org.openqa.selenium.WebDriver", "chromedriver");
-        }
-
         @Test
     public  void main() throws InterruptedException {
-
+                System.setProperty("webdriver.chrome.driver","chromedriver");
             org.openqa.selenium.WebDriver driver = new ChromeDriver();
             driver.manage().window().maximize();
             driver.get("https://bitsgap.com/sign-in/?d=app");
