@@ -15,7 +15,9 @@ public class WebDriverTest {
         @Test
     public  void main() throws InterruptedException {
                 System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+                Dimension dimension = new Dimension(1920, 960);
             WebDriver driver = new ChromeDriver();
+                driver.manage().window().setSize(dimension);
             driver.get("https://bitsgap.com/sign-in/?d=app");
             WebElement searchLogin = driver.findElement(By.id("lemail"));
             searchLogin.sendKeys("ilyabudnikuttest@mail.ru");
