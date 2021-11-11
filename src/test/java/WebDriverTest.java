@@ -19,8 +19,9 @@ public class WebDriverTest {
 
                 System.setProperty("webdriver.gecko.driver","geckodriver.exe");
             WebDriver driver = new FirefoxDriver();
+            Dimension d = new Dimension(945,1020);
             driver.get("https://bitsgap.com/sign-in/?d=app");
-
+            driver.manage().window().setSize(d);
             System.out.print(driver.manage().window().getSize() + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             WebElement searchLogin = driver.findElement(By.id("lemail"));
             searchLogin.sendKeys("ilyabudnikuttest@mail.ru");
