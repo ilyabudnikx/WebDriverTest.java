@@ -1,17 +1,10 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WrapsDriver;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.*;
-import org.openqa.selenium.firefox.FileExtension;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.GeckoDriverInfo;
-import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
-import java.lang.ref.WeakReference;
-import java.util.List;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import org.testng.annotations.Test;
 
 public class WebDriverTest {
         @Test
@@ -30,7 +23,7 @@ public class WebDriverTest {
             Thread.sleep(20000);
             WebElement searchAcceptButton = driver.findElement(By.cssSelector("#login-form > button"));
             searchAcceptButton.click();
-            Thread.sleep(12000);
+            Thread.sleep(120000000);
             WebElement searchCloseButton = driver.findElement(By.cssSelector("body > div.modal > div.modal__content.modal__content_mobile > button"));
             searchCloseButton.click();
 
