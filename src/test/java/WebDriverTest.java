@@ -16,7 +16,7 @@ public class WebDriverTest {
             org.openqa.selenium.WebDriver driver = new ChromeDriver();
             driver.manage().window().maximize();
             driver.get("https://bitsgap.com/sign-in/?d=app");
-            WebElement searchLogin = driver.findElement(By.id("lemail")); asd
+            WebElement searchLogin = driver.findElement(By.id("lemail"));
             searchLogin.sendKeys("ilyabudnikuttest@mail.ru");
             WebElement searchPassword = driver.findElement(By.id("lpassword"));
             searchPassword.sendKeys("Bulka2002");
