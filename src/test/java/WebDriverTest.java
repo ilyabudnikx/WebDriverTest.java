@@ -15,9 +15,7 @@ public class WebDriverTest {
         @Test
     public  void main() throws InterruptedException {
                 System.setProperty("webdriver.chrome.driver","chromedriver.exe");
-                Dimension dimension = new Dimension(1920, 960);
             WebDriver driver = new ChromeDriver();
-                driver.manage().window().setSize(dimension);
             driver.get("https://bitsgap.com/sign-in/?d=app");
             WebElement searchLogin = driver.findElement(By.id("lemail"));
             searchLogin.sendKeys("ilyabudnikuttest@mail.ru");
@@ -25,25 +23,26 @@ public class WebDriverTest {
             searchPassword.sendKeys("Bulka2002");
             WebElement searchAcceptButton = driver.findElement(By.xpath("/html/body/div[1]/main/div/div[2]/form/button"));
             searchAcceptButton.click();
-            Thread.sleep(6000);
+            Thread.sleep(12000);
             WebElement searchCloseButton = driver.findElement(By.cssSelector("body > div.modal > div.modal__content > button"));
             searchCloseButton.click();
-            WebElement searchMenuButton = driver.findElement(By.cssSelector("#root > main > div > div > div > div > div > header > div > div:nth-child(2) > div.page-header__icons > div:nth-child(3) > div > button > span.MuiIconButton-label"));
+            WebElement searchMenuButton = driver.findElement(By.cssSelector("#root > main > div > div > div > div > div > div > div.m-bots-page__header > div.m-page-header > div:nth-child(1) > button"));
             searchMenuButton.click();
-            WebElement searchDemoMode = driver.findElement(By.cssSelector("body > div.MuiPopover-root > div.MuiPaper-root.MuiPopover-paper.main-menu__popover.MuiPaper-elevation8 > div > div.main-menu__options > ul > li:nth-child(1) > div > div.main-menu-options__demo > label"));
-            searchDemoMode.click();
             Thread.sleep(1000);
-            WebElement searchCloseButton2 = driver.findElement(By.cssSelector("body > div.modal > div.modal__content > button"));
+            WebElement searchDemo = driver.findElement(By.cssSelector("body > div.MuiDrawer-root.MuiDrawer-modal > div.MuiPaper-root.MuiDrawer-paper.m-page-header__menu.MuiDrawer-paperAnchorLeft.MuiPaper-elevation16 > div > div.m-main-menu__switches > div:nth-child(1) > label"));
+            searchDemo.click();
+            Thread.sleep(7000);
+            WebElement searchCloseButton2 = driver.findElement(By.cssSelector("body > div.modal > div.modal__content.modal__content_mobile > button"));
             searchCloseButton2.click();
-            WebElement searchButtonTrading = driver.findElement(By.cssSelector("#root > main > div > div > div > div > div > header > div > div:nth-child(1) > div > div > div > div > a:nth-child(1)"));
-            searchButtonTrading.click();
-            Thread.sleep(2000);
-            WebElement searchNicePrice = driver.findElement(By.cssSelector("#root > main > div > div > div > div > div > div > div.trading-page.trading-page_view_standard > div.trading-page__column.trading-page__column_position_right > div.place-order > div.place-order__content > div:nth-child(4) > div > button > span"));
+            WebElement searchTradingButton = driver.findElement(By.cssSelector("body > div.MuiDrawer-root.MuiDrawer-modal > div.MuiPaper-root.MuiDrawer-paper.m-page-header__menu.MuiDrawer-paperAnchorLeft.MuiPaper-elevation16 > div > div.m-main-menu__content > ul > li:nth-child(1) > div > a"));
+            searchTradingButton.click();
+            Thread.sleep(4000);
+            WebElement searchNicePrice = driver.findElement(By.cssSelector("#root > main > div > div > div > div > div > div > div.m-trading-page > div.m-trading-page__tab-content > div.m-trading-page__view.m-trading-page__view_trading.m-trading-page__view_visible > div.m-trading-page__place-order > div > div.place-order__content > div:nth-child(4) > div > button"));
             searchNicePrice.click();
-            WebElement searchInputValues = driver.findElement(By.cssSelector("#root > main > div > div > div > div > div > div > div.trading-page.trading-page_view_standard > div.trading-page__column.trading-page__column_position_right > div.place-order > div.place-order__content > div:nth-child(5) > div > div > div > input"));
-            searchInputValues.sendKeys("0.01");
-            WebElement searchAcceptTrade = driver.findElement(By.cssSelector("#root > main > div > div > div > div > div > div > div.trading-page.trading-page_view_standard > div.trading-page__column.trading-page__column_position_right > div.place-order > div.place-order__content > div.place-order__button > button"));
-            searchAcceptTrade.click();
+            WebElement searchValue = driver.findElement(By.cssSelector("#root > main > div > div > div > div > div > div > div.m-trading-page > div.m-trading-page__tab-content > div.m-trading-page__view.m-trading-page__view_trading.m-trading-page__view_visible > div.m-trading-page__place-order > div > div.place-order__content > div:nth-child(5) > div > div > div > div > input"));
+            searchValue.sendKeys("0.01");
+            WebElement searchAcceptButton1 = driver.findElement(By.cssSelector("#root > main > div > div > div > div > div > div > div.m-trading-page > div.m-trading-page__tab-content > div.m-trading-page__view.m-trading-page__view_trading.m-trading-page__view_visible > div.m-trading-page__place-order > div > div.place-order__content > div.place-order__button > button"));
+            searchAcceptButton1.click();
             driver.quit();
     }
 }
