@@ -27,7 +27,7 @@ public class WebDriverTest {
             searchLogin.sendKeys("ilyabudnikuttest@mail.ru");
             WebElement searchPassword = driver.findElement(By.id("lpassword"));
             searchPassword.sendKeys("Bulka2002");
-            Thread.sleep(1000);
+            Thread.sleep(20000);
             WebElement searchAcceptButton = driver.findElement(By.cssSelector("#login-form > button"));
             searchAcceptButton.click();
             Thread.sleep(12000);
