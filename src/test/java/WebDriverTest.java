@@ -25,14 +25,13 @@ public class WebDriverTest {
             WebElement searchAcceptButton = driver.findElement(By.xpath("/html/body/div[1]/main/div/div[2]/form/button"));
             searchAcceptButton.click();
             Thread.sleep(6000);
-            WebElement searchCloseButton = driver.findElement(By.cssSelector("body > div.modal > div.modal__content > button"));
-            searchCloseButton.click();
             WebElement searchMenuButton = driver.findElement(By.cssSelector("#root > main > div > div > div > div > div > header > div > div:nth-child(2) > div.page-header__icons > div:nth-child(3) > div > button > span.MuiIconButton-label"));
             searchMenuButton.click();
             WebElement searchDemoMode = driver.findElement(By.cssSelector("body > div.MuiPopover-root > div.MuiPaper-root.MuiPopover-paper.main-menu__popover.MuiPaper-elevation8 > div > div.main-menu__options > ul > li:nth-child(1) > div > div.main-menu-options__demo > label"));
             searchDemoMode.click();
             Thread.sleep(1000);
-
+            WebElement searchCloseButton2 = driver.findElement(By.cssSelector("body > div.modal > div.modal__content > button"));
+            searchCloseButton2.click();
             WebElement searchButtonTrading = driver.findElement(By.cssSelector("#root > main > div > div > div > div > div > header > div > div:nth-child(1) > div > div > div > div > a:nth-child(1)"));
             searchButtonTrading.click();
             Thread.sleep(2000);
