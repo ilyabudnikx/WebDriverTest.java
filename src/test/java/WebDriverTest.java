@@ -23,7 +23,7 @@ public class WebDriverTest {
             Thread.sleep(20000);
             WebElement searchAcceptButton = driver.findElement(By.cssSelector("#login-form > button"));
             searchAcceptButton.click();
-            Thread.sleep(120000000);
+            Thread.sleep(12000);
             WebElement searchCloseButton = driver.findElement(By.cssSelector("body > div.modal > div.modal__content.modal__content_mobile > button"));
             searchCloseButton.click();
 
