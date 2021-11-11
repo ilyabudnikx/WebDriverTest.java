@@ -15,7 +15,9 @@ public class WebDriverTest {
         @Test
     public  void main() throws InterruptedException {
                 System.setProperty("webdriver.chrome.driver","chromedriver.exe");
-            WebDriver driver = new ChromeDriver();
+                ChromeOptions chrome = new ChromeOptions();
+                chrome.addArguments("user-agent=\\\"Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)\\\"");
+            WebDriver driver = new ChromeDriver(chrome);
             driver.get("https://bitsgap.com/sign-in/?d=app");
             WebElement searchLogin = driver.findElement(By.id("lemail"));
             searchLogin.sendKeys("ilyabudnikuttest@mail.ru");
@@ -24,7 +26,7 @@ public class WebDriverTest {
             WebElement searchAcceptButton = driver.findElement(By.xpath("/html/body/div[1]/main/div/div[2]/form/button"));
             searchAcceptButton.click();
             Thread.sleep(12000);
-            WebElement searchCloseButton = driver.findElement(By.xpath("/html/body/div[3]/div[3]/button"));
+            WebElement searchCloseButton = driver.findElement(By.cssSelector("body > div.modal > div.modal__content.modal__content_mobile > button"));
             searchCloseButton.click();
 
             WebElement searchMenuButton = driver.findElement(By.cssSelector("#root > main > div > div > div > div > div > div > div.m-bots-page__header > div.m-page-header > div:nth-child(1) > button"));
