@@ -14,7 +14,7 @@ import java.util.List;
 public class WebDriverTest {
         @Test
     public  void main() throws InterruptedException {
-                System.setProperty("webdriver.chrome.driver","chromedriver");
+                System.setProperty("webdriver.chrome.driver","chromedriver.exe");
             WebDriver driver = new ChromeDriver();
             driver.manage().window().maximize();
             driver.get("https://bitsgap.com/sign-in/?d=app");
