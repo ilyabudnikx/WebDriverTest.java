@@ -14,11 +14,14 @@ import java.util.List;
 public class WebDriverTest {
         @Test
     public  void main() throws InterruptedException {
+
                 System.setProperty("webdriver.chrome.driver","chromedriver.exe");
                 ChromeOptions chrome = new ChromeOptions();
                 chrome.addArguments("user-agent=\\\"Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)\\\"");
             WebDriver driver = new ChromeDriver(chrome);
+            driver.manage().window().setSize(new Dimension(945, 1020));
             driver.get("https://bitsgap.com/sign-in/?d=app");
+
             System.out.print(driver.manage().window().getSize() + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             WebElement searchLogin = driver.findElement(By.id("lemail"));
             searchLogin.sendKeys("ilyabudnikuttest@mail.ru");
