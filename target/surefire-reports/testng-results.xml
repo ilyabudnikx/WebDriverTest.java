@@ -2,34 +2,32 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="WebDriverTest" duration-ms="26662" started-at="2021-11-11T19:46:50 MSK" finished-at="2021-11-11T19:47:17 MSK">
+  <suite name="WebDriverTest" duration-ms="2031242" started-at="2021-11-11T19:16:40 MSK" finished-at="2021-11-11T19:50:31 MSK">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="26662" started-at="2021-11-11T19:46:50 MSK" finished-at="2021-11-11T19:47:17 MSK">
+    <test name="Command line test" duration-ms="2031242" started-at="2021-11-11T19:16:40 MSK" finished-at="2021-11-11T19:50:31 MSK">
       <class name="WebDriverTest">
-        <test-method status="FAIL" signature="main()[pri:0, instance:WebDriverTest@6f1fba17]" name="main" duration-ms="26630" started-at="2021-11-11T19:46:50 MSK" finished-at="2021-11-11T19:47:17 MSK">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="main()[pri:0, instance:WebDriverTest@6f1fba17]" name="main" duration-ms="2031206" started-at="2021-11-11T19:16:40 MSK" finished-at="2021-11-11T19:50:31 MSK">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"body > div.modal > div.modal__content.modal__content_mobile > button"}
+              <![CDATA[chrome not reachable
   (Session info: chrome=95.0.4638.69)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'DESKTOP-11KEV12', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9703e163f99ff825651bfab0bcf99415, findElement {using=css selector, value=body > div.modal > div.modal__content.modal__content_mobile > button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\Ilya\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53538}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53538/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9703e163f99ff825651bfab0bcf99415]]>
+Command: [25ea1eef1222152afd8f98577dffc2e0, findElement {using=css selector, value=body > div.modal > div.modal__content > button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\Ilya\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64861}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64861/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 25ea1eef1222152afd8f98577dffc2e0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"body > div.modal > div.modal__content.modal__content_mobile > button"}
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=95.0.4638.69)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'DESKTOP-11KEV12', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9703e163f99ff825651bfab0bcf99415, findElement {using=css selector, value=body > div.modal > div.modal__content.modal__content_mobile > button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\Ilya\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53538}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53538/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9703e163f99ff825651bfab0bcf99415
+Command: [25ea1eef1222152afd8f98577dffc2e0, findElement {using=css selector, value=body > div.modal > div.modal__content > button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\Ilya\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64861}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64861/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 25ea1eef1222152afd8f98577dffc2e0
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -45,7 +43,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-at WebDriverTest.main(WebDriverTest.java:43)
+at WebDriverTest.main(WebDriverTest.java:28)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -85,7 +83,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main -->

@@ -16,10 +16,9 @@ public class WebDriverTest {
     public  void main() throws InterruptedException {
 
                 System.setProperty("webdriver.chrome.driver","chromedriver.exe");
-                ChromeOptions chrome = new ChromeOptions();
-                chrome.addArguments("user-agent=\\\"Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)\\\"");
-            WebDriver driver = new ChromeDriver(chrome);
-            driver.manage().window().setSize(new Dimension(945, 1020));
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("window-size=945,1020");
+            WebDriver driver = new ChromeDriver(chromeOptions);
             driver.get("https://bitsgap.com/sign-in/?d=app");
 
             System.out.print(driver.manage().window().getSize() + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
