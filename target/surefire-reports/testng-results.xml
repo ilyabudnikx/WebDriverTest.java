@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="WebDriverTest" duration-ms="58122" started-at="2021-11-11T21:21:33 MSK" finished-at="2021-11-11T21:22:31 MSK">
+  <suite name="WebDriverTest" duration-ms="66403" started-at="2021-11-14T22:10:19 MSK" finished-at="2021-11-14T22:11:25 MSK">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="58122" started-at="2021-11-11T21:21:33 MSK" finished-at="2021-11-11T21:22:31 MSK">
+    <test name="Command line test" duration-ms="66403" started-at="2021-11-14T22:10:19 MSK" finished-at="2021-11-14T22:11:25 MSK">
       <class name="WebDriverTest">
-        <test-method status="PASS" signature="main()[pri:0, instance:WebDriverTest@6f1fba17]" name="main" duration-ms="58090" started-at="2021-11-11T21:21:33 MSK" finished-at="2021-11-11T21:22:31 MSK">
+        <test-method status="PASS" signature="main()[pri:0, instance:WebDriverTest@6f1fba17]" name="main" duration-ms="66357" started-at="2021-11-14T22:10:19 MSK" finished-at="2021-11-14T22:11:25 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main -->
